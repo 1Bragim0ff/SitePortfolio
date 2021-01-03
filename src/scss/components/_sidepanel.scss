@@ -1,0 +1,36 @@
+.sidepanel {
+	position: fixed;
+	top: 373px;
+	left: -90px;
+	transform: rotate(90deg);
+	z-index: 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 344px;
+
+	&__divider {
+		width:70px;
+		margin-right: 20px;
+		border: 2px solid #000000;
+	}
+
+	&__social {
+		font-size: 21px;
+		margin-right: 15px;
+		color: #000;
+		transform: rotate(-180deg);
+		&:hover {
+			color: $black-color-hover;
+			text-decoration: none;
+		}
+	}
+
+	&__text {
+		color: #000000;
+		font-size: 16px;
+		font-weight: 700;
+		transform: rotate(-180deg);
+		cursor: default;
+	}
+}
