@@ -29,7 +29,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('watch', function() {
-    gulp.watch("src/scss/**/*.+(sass|scss|css)", gulp.parallel('styles'));
+    gulp.watch("src/scss/**/*.+(sass|scss|css)", {readDelay: 100}, gulp.parallel('styles'));
     gulp.watch("src/*.html").on('change', gulp.parallel('html'));
     gulp.watch("src/js/**/*.js").on('change', gulp.parallel('scripts'));
     gulp.watch("src/fonts/**/*").on('all', gulp.parallel('fonts'));

@@ -12,3 +12,10 @@ closeMenu.addEventListener('click', () => {
 	menu.classList.remove('menu_active'),
 	overlay.classList.remove('overlay_active');
 });
+
+const counters = document.querySelectorAll('.skill-list__percent'),
+      lines = document.querySelectorAll('.skill-list__progressbar span');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+});

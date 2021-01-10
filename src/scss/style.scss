@@ -1,25 +1,28 @@
 //Fonts: Poppins{bold,500}
 
 // Libs
-@import 'libs/_bootstrap-reboot.min';
-@import 'libs/_bootstrap-grid.min';
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/bootstrap-grid.min';
 @import 'libs/fontawesome/fontawesome';
 @import 'libs/fontawesome/brands';
 
 // Components
-@import 'components/_variables';
-@import 'components/_mixins';
-@import 'components/_fonts';
-@import 'components/_header';
-@import 'components/_buttons';
-@import 'components/_sidepanel';
-@import 'components/_hamburger';
-@import 'components/_menu';
-@import 'components/_overlay';
+@import 'components/variables';
+@import 'components/mixins';
+@import 'components/fonts';
+@import 'components/header';
+@import 'components/buttons';
+@import 'components/sidepanel';
+@import 'components/hamburger';
+@import 'components/menu';
+@import 'components/overlay';
 
 // Sections
-@import 'sections/_section-one';
-@import 'sections/_section-two';
+@import 'sections/section-one';
+@import 'sections/section-two';
+@import 'sections/section-three';
+@import 'sections/section-four';
+
 // Media
 @import 'media/_section-one-media';
 

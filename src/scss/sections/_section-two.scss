@@ -1,5 +1,5 @@
 .section-two {
-	min-height: 840px;
+	// min-height: 840px;
 	padding-top: 120px;
 	&__grid {
 		display: grid;
@@ -18,6 +18,13 @@
 		@include before-circle;
 	}
 
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		-o-object-fit: cover;
+	}
+
 	&__header {
 		margin-top: 15px;
 	}
@@ -25,7 +32,7 @@
 	&__divider {
 		margin-top: 10px;
 		width: 80px;
-		border: 2px solid #FFA501;
+		border: 2px solid $main-color;
 	}
 
 	&__description {
@@ -66,7 +73,7 @@
 				align-items: center;
 				width: 36px;
 				height: 36px;
-				background-color: #ffa501;
+				background-color: $main-color;
 				border-radius: 100%;
 				img {
 					position: relative;
