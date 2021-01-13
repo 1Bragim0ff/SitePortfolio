@@ -1,0 +1,51 @@
+.section-five {
+    padding-top: 60px;
+    &__supheader {
+        position: relative;
+        text-align: center;
+        @include before-circle;
+        &:before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__header {
+        text-align: center;
+        margin-top: 5px;
+    }
+    &__divider {
+        width: 60px;
+        border: 2px solid $main-color;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    &__grid {
+        margin-top:  60px;
+        display: grid;
+        grid-template-columns: repeat(4, 280px);
+        grid-template-rows: repeat(2, 280px);
+        grid-auto-rows: 280px;
+        grid-auto-columns: 280px;
+        gap: 5px;
+    }
+
+    &__item{
+        &_vertical {
+            grid-column: 4 / 5;
+            grid-row: 1 / 3;
+        }
+        &_horizontal {
+            grid-column: 2 / 4;
+        }
+        img {
+            display: block;
+            width: 100%; 
+            height: 100%;
+            object-fit: cover;
+            transition: filter 0.6s;
+            &:hover {
+                filter: grayscale(100%);
+            }
+        }
+    }
+}
